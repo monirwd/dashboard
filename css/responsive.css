@@ -1,9 +1,62 @@
 /*
-====================================
+===============================
 Medium Screen - Others
-====================================
+===============================
 */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+
+	.header-area {
+		padding: 20px 0;
+	}
+
+	.navbar-brand img {
+		max-width: 120px;
+	}
+
+	.navbar-nav li a {
+		font-size: 13.2px;
+	}
+
+	.navbar-nav li a i {
+		font-size: 11px;
+	}
+
+	.navbar-nav li a {
+		margin: 10px 4px;
+	}
+
+	.navbar-nav li .user {
+		margin-left: 4px;
+	}
+
+	.navbar-nav li:first-child {
+		margin-right: 5px;
+	}
+
+	.navbar-nav li a .fa-user, .navbar-nav li a .fa-language, .navbar-nav li a .fa-cog {
+		font-size: 14px;
+	}
+
+	.navbar-nav li .switch-btn {
+		font-size: 12px;
+	}
+
+	.navbar-nav li a img {
+		max-width: 85px;
+	}
+
+	.header-btm input {
+		font-size: 15px;
+	}
+
+	.header-btm {
+		bottom: -58px;
+	}
+
+
+
+
+
 
 
 
@@ -31,6 +84,32 @@ Small Screen - Tablate
 	    background-color: #000;
 	}
 
+	.mbl-sec {
+		display: flex;
+		position: relative;
+		width: 75%;
+	}
+
+	.mbl-header {
+		position: absolute;
+		left: 0;
+		bottom: -48px;
+	}
+	
+	.home-mbl {
+		margin-top: -18px;
+	}
+
+	.hamburger-box {
+		top: -20px;
+	}
+
+	.header-btm input {
+		width: 75%;
+	}
+
+	
+
 
 
 
@@ -50,12 +129,7 @@ Small Screen - Mobile
 ====================================
 */
 @media screen and (max-width: 767px) {
-
-	.container {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-
+	
 	.modal-backdrop.show {
 	    opacity: 0.5;
 	}
@@ -63,6 +137,69 @@ Small Screen - Mobile
 	.modal-backdrop {
 	    background-color: #000000;
 	}
+
+	.navbar-brand img {
+		max-width: 120px;
+	}
+
+	.mbl-sec {
+		display: flex;
+		position: relative;
+		width: 75%;
+	}
+
+	.mbl-header {
+		position: absolute;
+		left: 0;
+		bottom: -48px;
+	}
+	
+	.home-mbl {
+		margin-top: -18px;
+	}
+
+	.hamburger-box {
+		top: -20px;
+	}
+
+	.header-btm input {
+		width: 75%;
+	}
+
+	.header-area {
+		padding: 20px 0;
+	}
+
+	@media only screen and (max-width: 575px) {
+		.mbl-header {
+			display: none;
+		}
+
+		.home-mbl {
+			margin-top: 2px;
+		}
+	
+		.hamburger-box {
+			top: 2px;
+		}
+
+		.header-area {
+			padding: 14px 0;
+		}
+
+		.navbar-brand img {
+			max-width: 110px;
+		}
+
+		.mbl-sec {
+			width: initial;
+		}
+	}
+
+
+
+	
+
 
 
 

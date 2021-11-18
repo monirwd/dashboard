@@ -7,7 +7,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;    
-	background: #fff;
+	background: #7ED0FF;
 	color: #191919;	
 }
 
@@ -50,6 +50,12 @@ img {
     background: #ff7675;
 }
 
+.container {
+    max-width: 1250px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 /*scrollto-top*/
 .scrollto-top {
     width: 40px;
@@ -64,6 +70,7 @@ img {
     right: 5px;
     bottom: 5px;
     display: none;
+    z-index: 99;
     transition: 0.2s all ease;
     -webkit-transition: 0.2s all ease;
     -moz-transition: 0.2s all ease;
@@ -80,43 +87,157 @@ img {
 /*===================
 header-area start
 =====================*/
-.navbar-brand img {
-    max-width: 100px;
+.header-area {
+    background: #00315C;
+    padding: 15px 0;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.3);
 }
 
-.navbar-nav li {
-    padding: 10px 15px;
+.navbar-brand img {
+    max-width: 160px;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    margin-top: -40px;
 }
 
 .navbar-nav li a {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
+    color: #FFF;
+    transition: 0.2s all ease;
+    margin: 10px 8px;
+}
+
+.navbar-nav li:first-child {
+    margin-right: 10px;
+}
+
+.navbar-nav li a i {
+    font-size: 14px;
+}
+
+.navbar-nav li a .fa-user,
+.navbar-nav li a .fa-language,
+.navbar-nav li a .fa-cog {
+    font-size: 16px;
+}
+
+.navbar-nav li .switch-btn,
+.navbar-nav li .user,
+.navbar-nav li .language,
+.navbar-nav li .settings {
+    background: #00294C;
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin: 0 4px;
+}
+
+.navbar-nav li .switch-btn {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 9px 10px;
+}
+
+.navbar-nav li .user {
+    margin-left: 15px;
+}
+
+.navbar-nav li a img {
+    max-width: 100px;
+}
+
+.navbar-nav li a:hover {
+    opacity: 0.8;
+}
+
+/* dropdown */
+.navbar-nav li .dropdown-menu {
+    width: 210px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 8px 0px;
+}
+
+.navbar-nav li .dropdown-menu li {
+    padding: 0;
+}
+
+.navbar-nav li .dropdown-menu li a {
+    font-size: 16px;
+    margin: 10px 0;
+    display: block;
+    padding: 0px 15px;
     color: #000;
     transition: 0.2s all ease;
 }
 
-.navbar-nav li a:hover,
-.navbar-nav li #active {
-    color: #F36977;
+.navbar-nav li .dropdown-menu li a:hover {
+    color: #7ED0FF;
+    opacity: 1;
+    background: none;
 }
 
-.nav-btn li {
-    padding: 10px 8px;
-}
-
-.nav-btn li a {
-    background: transparent;
-    border: 1px solid #F36977;
+/* custom-switch */
+.switch {
+    position: relative;
     display: inline-block;
-    padding: 8px 20px;
-    border-radius: 7px;
-}
-
-.nav-btn li a:hover,
-.nav-btn li .active {
-    background: #F36977;
-    color: #FFF;
-}
+    width: 30px;
+    height: 16px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4FB2F7;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 16px;
+    left: 0px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #CCCCCC;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
 
 .navbar-toggler {
     outline: none!important;
@@ -127,6 +248,67 @@ header-area start
 
 .navbar-toggler:hover {
     opacity: 0.75;
+}
+
+.header-right {
+    position: relative;
+}
+
+.header-btm {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -59px;
+    background: url(images/header-shape.jpg);
+    background-repeat: no-repeat;
+    padding: 10px 0px;
+    padding-left: 95px;
+    z-index: 99;
+}
+
+.header-btm::after {
+    content: "";
+    display: block;
+    width: 1000%;
+    height: 45px;
+    background: url(images/before.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    position: absolute;
+    top: 6px;
+    left: 52%;
+    z-index: -9;
+}
+
+.header-btm input {
+    width: 60%;
+    display: block;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #8f8f8f;
+    margin-left: 15px;
+    padding: 8px 15px;
+}
+
+.header-btm span {
+    font-size: 16px;
+    font-weight: 300;
+    color: #8f8f8f;
+    position: absolute;
+    left: 95px;
+    top: 18px;
+}
+
+.home-mbl a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFF;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 /*hamburger*/
@@ -148,7 +330,7 @@ header-area start
 .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: #000;
+    background-color: #FFF;
     border-radius: 4px;
     position: absolute;
 }
@@ -168,22 +350,171 @@ header-area start
     bottom: -10px; 
 }
 
-/*side-bar*/
+/*====================
+offcanvas start
+======================*/
 .offcanvas-start {
-    width: 320px;
+    max-width: 375px;
+    background: linear-gradient(to bottom, #002866, #00315C);
+    border-right: 1px solid #59B2EE;
 }
 
-.offcanvas-header img {
-    max-width: 70px;
+.offcanvas-header {
+    justify-content: flex-end;
+    padding: 16px 20px;
 }
 
-.offcanvas-body ul li {
-    padding: 10px 10px;
+.offcanvas-body {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.offcanvas-logo img {
+    max-width: 162px;
+    display: block;
+    margin: 0 auto;;
+} 
+
+.offcanvas-upper {
+    padding: 0 16px;
+}
+
+.offcanvas-upper > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    padding-top: 4px;
+}
+
+.offcanvas-upper > ul li {
+    padding: 14px 4px;
+}
+
+.offcanvas-upper > ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFF;
+    background: #002246;
+    padding: 8px 14px;
+    border-radius: 6px;
+}
+
+.offcanvas-upper > ul li a .fa-chevron-down {
+    font-size: 15px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.offcanvas-upper > ul li .user,
+.offcanvas-upper > ul li .language,
+.offcanvas-upper > ul li .settings {
+    padding: 12px 15px;
+}
+
+.offcanvas-upper > ul li .switch-btn .switch {
+    margin-right: 6.5px;
+    width: 48px;
+    margin-left: -7px;
+}
+
+.offcanvas-upper > ul li .switch-btn {
+    padding-left: 0px;
+}
+
+.offcanvas-upper .dropdown-menu {
+    width: 210px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 8px 0px;
+}
+
+.offcanvas-upper .dropdown-menu li {
+    padding: 0;
+}
+
+.offcanvas-upper .dropdown-menu li a {
+    font-size: 16px;
+    margin: 10px 0;
+    display: block;
+    padding: 0px 15px;
+    color: #000;
+    transition: 0.2s all ease;
+    background: none;
+}
+
+.offcanvas-upper .dropdown-menu li a:hover {
+    color: #7ED0FF;
+    opacity: 1;
+    background: none;
+}
+
+.offcanvas-upper form {
+    background: #FFF;
+    padding: 10px 16px;
+    position: relative;
+    border-radius: 50px;
+}
+
+.offcanvas-upper span {
+    font-size: 16px;
+    color: #787878;
+    position: absolute;
+    left: 18px;
+}
+
+.offcanvas-upper input {
+    width: 100%;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    color: #787878;
+    border: none;
+    background: none;
+    outline: none;
+    padding-left: 28px;
+}
+
+.offcanvas-menu ul li a {
+    font-size: 17px;
+    font-weight: 400;
+    color: #FFF;
+    border-top: 2px solid #FFF;
+    display: block;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.offcanvas-menu ul > li:last-child {
+    border-bottom: 2px solid #FFF;
+}
+
+.offcanvas-menu ul li ul {
+    display: none;
+    background: #59B2EE;
+}
+
+.offcanvas-menu ul li ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    border-top: 1px solid #FFFFFF;
+}
+
+.offcanvas-menu ul li ul li:last-child a {
+    border-bottom: none;
+}
+
+.offcanvas-menu ul li a:hover {
+    opacity: 0.75;
 }
 
 .btn-close {
     opacity: 1;
-    font-size: 25px;
+    font-size: 24px;
     outline: none!important;
     box-shadow: none!important;
     transition: 0.2s all ease;
@@ -196,3 +527,9 @@ header-area start
 .modal-backdrop {
     background-color: transparent;
 }
+
+.main-wrapper {
+    overflow: hidden;
+}
+
+

@@ -30,82 +30,307 @@
 <body>
     <!--[if lte IE 9]> <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p><![endif]-->
 
-    <!-- header-area start -->
-    <header class="header-area">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo.png" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse">
-                    <ul class="navbar-nav ms-auto">
-                        <li><a href="#" id="active">Home</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Event</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Partner</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                    <ul class="navbar-nav nav-btn ms-auto">
-                        <li><a href="#">Login</a></li>
-                        <li><a class="active" href="#">Signup</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!-- header-area end -->
-
-    <!-- side-bar start -->
+    <!-- offcanvas start -->
     <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasExample"
         aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-                <a href="#">
-                    <img src="images/logo.png" alt="">
-                </a>
-            </h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <ul class="navbar-nav">
-                <li><a href="#" id="active">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Event</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Partner</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <ul class="navbar-nav nav-btn">
-                <li><a href="#">Login</a></li>
-                <li><a class="active" href="#">Signup</a></li>
-            </ul>
+            <div class="offcanvas-logo text-center">
+                <a href="#">
+                    <img src="images/logo-main.png" alt="">
+                </a>
+            </div>
+            <div class="offcanvas-upper">
+                <ul>
+                    <li>
+                        <div class="dropdown">
+                            <a class="user" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fas fa-user"></i> <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a class="language" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fas fa-language"></i>
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="switch-btn" href="#">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label> Light
+                        </a>
+                    </li>
+                    <li><a class="settings" href="#"><i class="fas fa-cog"></i></a></li>
+                </ul>
+                <form action="#">
+                    <span><i class="fas fa-search"></i></span>
+                    <input type="search" placeholder="Search by Address / TX Hash / Block">
+                </form>
+            </div>
+            <div class="offcanvas-menu pt-4">
+                <ul>
+                    <li><a href="#">Home </a></li>
+                    <li><a href="#">Blockchain </a>
+                        <ul>
+                            <li><a href="#">Blocks</a></li>
+                            <li><a href="#">Transactions</a></li>
+                            <li><a href="#">Accounts</a></li>
+                            <li><a href="#">Node Tokens</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Analytics </a>
+                        <ul>
+                            <li><a href="#">Blocks</a></li>
+                            <li><a href="#">Transactions</a></li>
+                            <li><a href="#">Accounts</a></li>
+                            <li><a href="#">Node Tokens</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Tools </a>
+                        <ul>
+                            <li><a href="#">Blocks</a></li>
+                            <li><a href="#">Transactions</a></li>
+                            <li><a href="#">Accounts</a></li>
+                            <li><a href="#">Node Tokens</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Resources </a>
+                        <ul>
+                            <li><a href="#">Blocks</a></li>
+                            <li><a href="#">Transactions</a></li>
+                            <li><a href="#">Accounts</a></li>
+                            <li><a href="#">Node Tokens</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About </a>
+                        <ul>
+                            <li><a href="#">Blocks</a></li>
+                            <li><a href="#">Transactions</a></li>
+                            <li><a href="#">Accounts</a></li>
+                            <li><a href="#">Node Tokens</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-    <!-- side-bar end -->
+    <!-- offcanvas end -->
 
-    <!-- main-wrapper start -->
-    <main class="main-wrapper py-4">
-        <div class="container ">
-            <p>Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Repellat fugit explicabo rerum necessitatibus,
-                alias enim libero ullam dolorem odio expedita similique, voluptatem autem quas praesentium, corrupti
-                impedit omnis quidem illo! Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Dolorem
-                repudiandae omnis molestias fugit at dolorum, modi eligendi ipsa, quo perspiciatis distinctio nemo
-                nulla, ullam? Eius dicta inventore cum architecto, consequatur.</p>
+    <main class="main-wrapper">
+        <!-- header-area start -->
+        <header class="header-area">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo-main.png" alt="">
+                    </a>
+                    <div class="mbl-sec">
+                        <div class="home-mbl d-lg-none ms-auto">
+                            <a href="#">Home</a>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                        <div class="header-btm mbl-header d-lg-none">
+                            <span><i class="fas fa-search"></i></span>
+                            <input type="search" placeholder="Search by Address / TX Hash / Block">
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse header-right">
+                        <ul class="navbar-nav ms-auto">
+                            <li><a href="#">Home</a></li>
+                            <li>
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Blockchain <i class="fas fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Analytics <i class="fas fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Tools <i class="fas fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Resources <i class="fas fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        About <i class="fas fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a class="user" href="#" role="button" id="dropdownMenuLink"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-user"></i> <i class="fas fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <a class="language" href="#" role="button" id="dropdownMenuLink"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-language"></i>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a class="switch-btn" href="#">
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label> Light Mode
+                                </a>
+                            </li>
+                            <li><a class="settings" href="#"><i class="fas fa-cog"></i></a></li>
+                            <li><a href="#"><img src="images/thumb-logo.png" alt=""></a></li>
+                        </ul>
+                        <div class="header-btm">
+                            <span><i class="fas fa-search"></i></span>
+                            <input type="text" placeholder="Search by Address / TX Hash / Block">
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- header-area end -->
+
+        <div class="main-part">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ad ex consequuntur vitae earum optio
+                maiores molestias perferendis. Pariatur labore nihil corporis. Dignissimos aspernatur est accusantium,
+                iusto consectetur velit. Quis doloribus iusto aliquid. Facere beatae sunt deleniti consectetur quia
+                voluptatibus nulla eveniet non. Velit expedita ut recusandae ad fugiat impedit, animi, consectetur atque
+                rem voluptates minus eaque earum ea est maiores odit natus exercitationem aperiam quos aliquam
+                voluptatibus. Similique beatae voluptatum alias impedit vero earum molestias corrupti magnam! Est
+                asperiores quia laborum dolor ea natus rem at, libero maiores possimus aspernatur. Dolorem, nulla? Quae
+                modi consectetur, at assumenda nihil nesciunt molestias id iusto pariatur numquam sit libero optio
+                tempora ducimus asperiores non eos quis praesentium odio quod reiciendis vero eveniet? Corrupti
+                recusandae obcaecati distinctio possimus perferendis necessitatibus incidunt cupiditate dignissimos vero
+                repellendus ipsum, beatae id asperiores, modi itaque earum ad. Veniam laudantium cumque error iure autem
+                fugiat ea blanditiis repudiandae suscipit adipisci deleniti, aliquam iste nihil voluptatem alias maxime
+                natus! Dolor consequatur id cum, qui animi hic consequuntur harum earum perspiciatis eaque reprehenderit
+                ab nihil unde corporis accusamus aliquid? Minima similique deserunt alias temporibus, eos vel id
+                inventore natus, veniam, eligendi maiores sint reprehenderit voluptatibus iusto earum iste nostrum velit
+                est. Laborum iusto impedit consequatur id ipsum temporibus officiis eius quo autem ducimus fugiat,
+                pariatur nobis sed rerum facere suscipit ut explicabo dolores voluptate velit alias voluptas enim?
+                Officiis voluptas minima et, aperiam rerum hic facere nisi ad consequatur sit, unde est adipisci tenetur
+                delectus iste suscipit numquam provident doloremque sunt voluptatum saepe recusandae, tempora explicabo!
+                Animi cum at odio neque id optio, blanditiis quaerat eveniet, soluta ea quibusdam eligendi vitae, ipsum
+                ut. Unde mollitia consectetur quos porro error non hic suscipit veritatis consequatur libero voluptatum
+                enim sed, accusamus eius qui aperiam et odit velit id illum. Inventore quis voluptate maiores,
+                blanditiis animi labore minus consequatur repellendus eligendi reiciendis explicabo et, nesciunt quaerat
+                obcaecati accusamus. Doloremque quos ad aliquid quae rerum dignissimos minus aut, maiores dolores, natus
+                incidunt asperiores perferendis architecto doloribus magni suscipit sequi nam eum nostrum. Reiciendis
+                perferendis pariatur nulla illo voluptatum iusto. Dolorum pariatur at, numquam ad laboriosam minus,
+                dicta natus eos doloremque, tempore placeat. Aliquid error velit autem repudiandae consequuntur.
+                Suscipit voluptas impedit esse omnis reprehenderit. Consequatur voluptatem fugit voluptate totam illum
+                repellat esse tenetur, itaque quia quas dolorem omnis quaerat velit optio natus voluptatibus, tempora
+                commodi sint, labore modi repellendus nulla iusto doloribus aperiam! Quod ab inventore a labore ex
+                placeat earum impedit doloribus similique? Perspiciatis blanditiis autem veniam hic excepturi asperiores
+                consequuntur, nostrum alias eos commodi sint quae saepe nihil animi qui deserunt facere iusto recusandae
+                sed dolorem culpa voluptatibus porro, beatae temporibus. Voluptatum saepe doloribus, quo sed ipsam esse
+                magnam recusandae sapiente nemo voluptatem quos pariatur itaque suscipit laborum blanditiis est hic
+                inventore molestias eum corrupti? Eligendi ea eos aliquid, omnis ipsam animi asperiores vitae voluptate
+                reprehenderit error, pariatur, odio placeat earum deserunt minus perferendis temporibus quo odit minima.
+                Obcaecati error nisi rerum omnis! Omnis porro velit nisi officia saepe voluptates, labore voluptatibus.
+            </p>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
-    <!-- main-wrapper end -->
-
-
-
-
-
 
 
 
