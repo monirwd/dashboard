@@ -57,6 +57,22 @@ Medium Screen - Others
 		margin: 15px 0;
 	}
 
+	.block-table table th {
+		font-size: 13.4px;
+	}
+
+	.block-table table td {
+		font-size: 14.5px;
+	}
+
+	.blcok-uper-item h2 {
+		font-size: 26.5px;
+	}
+
+	.block-upper1 {
+		align-items: flex-start;
+	}
+
 
 
 
@@ -110,6 +126,14 @@ Small Screen - Tablate
 
 	.header-btm input {
 		width: 75%;
+	}
+
+	.block-upper1 {
+		margin-top: 20px;
+	}
+
+	.clause-part h4 {
+		padding: 24px 24px;
 	}
 
 	
@@ -213,9 +237,35 @@ Small Screen - Mobile
 		.mobile-footer-item .info {
 			font-size: 13.5px;
 		}
+	}
 
+	.block-table {
+		overflow-x: scroll;
+	}
 
+	.block-table table {
+		width: 740px;
+	}
 
+	.block-right {
+		margin-top: 20px;
+	}
+
+	.clause-part h4,
+	.clause-part h4 span {
+		font-size: 19px;
+	}
+
+	.blcok-uper-item h4 {
+		font-size: 17.5px;
+	}
+
+	.blcok-uper-item h2 {
+		font-size: 23.5px;
+	}
+
+	.block-upper1 {
+		align-items: flex-start;
 	}
 
 	
