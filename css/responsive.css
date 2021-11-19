@@ -73,6 +73,26 @@ Medium Screen - Others
 		align-items: flex-start;
 	}
 
+	.activity-graph {
+		border-bottom: none;
+		border-right: none;
+	}
+
+	.activity-part .bdr-btm {
+		border-bottom: 1px solid #F0F0F0;
+		border-right: 2px solid #F0F0F0;
+	}
+
+	.box4 h6,
+	.meter-box2 h6,
+	.meter-box1 h6 {
+		margin-top: -18px;
+	}
+
+
+	
+
+
 
 
 
@@ -135,6 +155,22 @@ Small Screen - Tablate
 	.clause-part h4 {
 		padding: 24px 24px;
 	}
+
+	.box4 h6 {
+		margin-top: 0;
+	}
+
+	.meter-box1,
+	.meter-box2 {
+		margin-top: 24px;
+		margin-bottom: 0;
+	}
+
+	.meterbox-area {
+		padding-bottom: 25px;
+	}
+
+
 
 	
 
@@ -266,6 +302,28 @@ Small Screen - Mobile
 
 	.block-upper1 {
 		align-items: flex-start;
+	}
+
+	.activity-right {
+		overflow-x: scroll;
+	}
+
+	.activity-right table {
+		width: 740px;
+	}
+
+	.meter-box1,
+	.meter-box2 {
+		margin-top: 24px;
+		margin-bottom: 0;
+	}
+
+	.meterbox-area {
+		padding-bottom: 25px;
+	}
+
+	.activity-header h2 {
+		font-size: 20px;
 	}
 
 	

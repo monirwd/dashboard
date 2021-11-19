@@ -691,7 +691,7 @@ footer-area start
 block-area start
 =======================*/
 .block-area {
-    padding: 40px 0;
+    padding: 40px 0 25px;
 }
 
 .block-left {
@@ -900,12 +900,268 @@ block-area start
 /*======================
 activity-area start
 ========================*/
+.activity-area {
+    padding-bottom: 25px;
+}
 .activity-main {
     background: #FFF;
     border-radius: 8px;
 }
 
+.activity-header {
+    background: #00315C;
+    padding: 15px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px 8px 0 0;
+}
 
+.activity-header h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #FFF;
+    background: #00315C;
+    border-radius: 7px 7px 0 0;
+    margin-bottom: 0;
+}
 
+.activity-header h2 a {
+    font-size: 20px;
+    color: #4A6B88;
+    display: inline-block;
+    margin-left: 10px;
+}
 
+.activity-header ul li {
+    display: inline-block;
+    padding-left: 14px;
+}
 
+.activity-header ul li a {
+    font-size: 17px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.activity-header ul li a:hover,
+.activity-header ul li .active {
+    color: #4fb2f7;
+}
+
+.activity-left h2 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #101010;
+    margin: 0;
+    padding: 15px 15px;
+    background: #F7F7F7;
+    text-align: center;
+}
+
+.activity-graph {
+    background: #FFFFFF;
+    padding: 14px 14px;
+    text-align: center;
+    border-bottom: 1px solid #F0F0F0;
+    border-right: 2px solid #F0F0F0;
+}
+
+.activity-graph ul li {
+    display: inline-block;
+    padding: 0px 14px 15px;
+}
+
+.activity-graph ul li a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #101010;
+    position: relative;
+    padding-left: 21px;
+}
+
+.activity-graph ul li a::before {
+    content: "";
+    height: 12px;
+    width: 12px;
+    background: #a9e6e4;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+}
+
+.activity-graph ul li .trans::before {
+    content: "";
+    height: 12px;
+    width: 12px;
+    background: #7BC1F1;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+}
+
+.activity-graph img {
+    width: 100%;
+}
+
+.activity-right table {
+    width: 100%;
+}
+
+.activity-right table th {
+    font-size: 15px;
+    font-weight: 600;
+    color: #212121;
+    background: #F7F7F7;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.activity-right table td {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4e4e4e;
+    background: #FFFFFF;
+    padding: 12.35px 0;
+    text-align: center;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.activity-right table td i {
+    font-size: 15px;
+    color: #4A5F87;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.activity-right table th:first-child,
+.activity-right table td:first-child {
+    padding-left: 5px;
+}
+
+/*======================
+meterbox-area start
+========================*/
+.meterbox-item {
+    text-align: center;
+}
+.meterbox-item p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #586e6d;
+    margin: 0;
+}
+
+.meterbox-item p a {
+    font-size: 20px;
+    color: #B8C1C1;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.meterbox-item h4 {
+    font-size: 27px;
+    font-weight: 600;
+    color: #191919;
+}
+
+.meterbox-item h4 small {
+    font-size: 15px;
+}
+
+.meter-line1 img,
+.meter-line2 img {
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.meter-line1,
+.meter-line2 {
+    background: #f7f7f7;
+    padding-top: 32px;
+    box-shadow: 0 8px 13px #0000001c;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.meterbox-item h6 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFF;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.meterbox-item h6 i {
+    font-size: 16px;
+    color: #CCE9FD;
+    display: inline-block;
+    margin-left: 2px;
+    text-align: center;
+}
+
+.meter-box1 {
+    background-image: -webkit-linear-gradient( 90deg, rgb(161, 229, 199) 0%, rgb(143, 209, 255) 100%);
+    padding: 30px 12px 10px;
+    box-shadow: 0px 8px 28px 0px rgba(25, 45, 58, 0.22);
+    border-radius: 10px;
+    margin: 24px 0;
+}
+
+.meter-box2 {
+    background-image: -webkit-linear-gradient( 90deg, rgb(253, 214, 238) 0%, rgb(120, 176, 237) 100%);
+    padding: 30px 12px 10px;
+    box-shadow: 0px 8px 28px 0px rgba(25, 45, 58, 0.22);
+    border-radius: 10px;
+    margin: 24px 0;
+}
+
+.meter-box1 img,
+.meter-box2 img {
+    max-width: 100%;;
+}
+
+.line4 p {
+    margin-top: -25px;
+}
+
+.box4 h6 {
+    margin-top: -18px;
+}
+
+.mbl-date a {
+    font-size: 15px;
+    font-weight: 600;
+    color: #4fb2f7;
+    background: #FFF;
+    display: inline-block;
+    padding: 6px 15px;
+    border-radius: 5px;
+}
+
+.mbl-date a i {
+    font-size: 12px;
+    color: #777;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.mbl-date .dropdown-menu li {
+    display: block;
+}
+
+.mbl-date .dropdown-menu li a {
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+    background: transparent;
+    padding: 0;
+    margin: 2px 0;
+}
+
+/*======================
+insight-area start
+========================*/
