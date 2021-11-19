@@ -53,6 +53,10 @@ Medium Screen - Others
 		bottom: -58px;
 	}
 
+	.footer-item {
+		margin: 15px 0;
+	}
+
 
 
 
@@ -194,9 +198,25 @@ Small Screen - Mobile
 		.mbl-sec {
 			width: initial;
 		}
+
+		.mobile-footer-item ul li {
+			padding: 0 5px;
+		}
+	
+		.mobile-footer-item ul li a {
+			width: 46px;
+			height: 46px;
+			font-size: 22px;
+		}
+	
+		.mobile-footer-item p,
+		.mobile-footer-item .info {
+			font-size: 13.5px;
+		}
+
+
+
 	}
-
-
 
 	
 
@@ -204,6 +224,7 @@ Small Screen - Mobile
 
 
 
+	
 
 
 
