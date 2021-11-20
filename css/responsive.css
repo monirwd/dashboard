@@ -89,6 +89,22 @@ Medium Screen - Others
 		margin-top: -18px;
 	}
 
+	.account-topitem img {
+		max-width: 45px;
+	}
+
+	.account-topcnt p {
+		font-size: 13px;
+	}
+
+	.account-topcnt h4 {
+		font-size: 28px;
+	}
+
+	.account-topcnt {
+		margin-left: 10px;
+	}
+
 
 	
 
@@ -168,6 +184,14 @@ Small Screen - Tablate
 
 	.meterbox-area {
 		padding-bottom: 25px;
+	}
+
+	.account-topitem {
+		margin: 10px 0;
+	}
+
+	.account-top {
+		padding: 16px 25px;
 	}
 
 
@@ -324,6 +348,18 @@ Small Screen - Mobile
 
 	.activity-header h2 {
 		font-size: 20px;
+	}
+
+	.account-topitem {
+		margin: 8px 0;
+	}
+
+	.account-top {
+		padding: 16px 25px;
+	}
+
+	.overview-chart {
+		padding: 10px;
 	}
 
 	

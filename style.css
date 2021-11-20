@@ -1165,3 +1165,111 @@ meterbox-area start
 /*======================
 insight-area start
 ========================*/
+.insight-meter .meterbox-item h4 span {
+    color: #4A5F87;
+    display: inline-block;
+    margin-left: 2px;
+}
+
+.band-width h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1c1c1c;
+}
+
+.band-width h4 a {
+    color: #DEDEDE;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.band-width {
+    padding: 20px 16px;
+    border-top: 1px solid #DDDDDD;
+    margin-top: 24px;
+}
+
+.band-width img {
+    width: 100%;
+}
+
+/*====================
+account-area start
+=======================*/
+.account-main {
+    background: #FFF;
+    border-radius: 8px;
+}
+
+.account-topitem {
+    background-color: #8BD5FF;
+    padding: 10px 15px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.account-topitem img {
+    max-width: 100%;
+}
+
+.account-topcnt {
+    margin-left: 15px;
+}
+
+.account-topcnt p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #216f9b;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.account-topcnt h4 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #216f9b;
+    margin: 0;
+}
+
+.account-top1 p,
+.account-top1 h4 {
+    color: #454545;
+}
+
+.account-top1 {
+    background-color: #EDEDED;
+}
+
+.account-topitem {
+    background-image: url(images/th-1.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right;
+}
+
+.account-top2 {
+    background-image: url(images/th-2.png);
+}
+
+.account-top3 {
+    background-image: url(images/th-3.png);
+}
+
+.account-top4 {
+    background-image: url(images/th-4.png);
+}
+
+.account-top {
+    padding: 25px 25px;
+}
+
+.overview-chart {
+    padding: 15px 20px;
+}
+
+.overview-chart img {
+    width: 100%;
+}
+
