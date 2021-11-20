@@ -105,12 +105,17 @@ Medium Screen - Others
 		margin-left: 10px;
 	}
 
+	.inner-tab-table table td h4,
+	.inner-tab-table table td p {
+		font-size: 15px;
+	}
+
+	.accont-tabright img {
+		max-width: 85%;
+	}
+
 
 	
-
-
-
-
 
 
 
@@ -192,6 +197,10 @@ Small Screen - Tablate
 
 	.account-top {
 		padding: 16px 25px;
+	}
+
+	.accont-tabright {
+		margin-top: 50px;
 	}
 
 
@@ -297,6 +306,41 @@ Small Screen - Mobile
 		.mobile-footer-item .info {
 			font-size: 13.5px;
 		}
+
+		.accont-tabright img {
+			max-width: 85%;
+		}
+
+		.inner-tab-table {
+			overflow-x: scroll;
+		}
+
+		.inner-tab-table table {
+			width: 520px;
+		}
+
+		.inner-tab-btm p {
+			text-align: center;
+		}
+
+		.inner-tab .tab-links li a {
+			font-size: 16px;
+			padding: 14px 5px;
+		}
+
+		.account-tab ul li {
+			padding: 0 8px!important;
+		}
+
+		.account-tab ul li a {
+			font-size: 14px;
+		}
+
+		.inner-tab .tab-links li {
+			padding: 0!important;
+		}
+
+
 	}
 
 	.block-table {
@@ -360,6 +404,10 @@ Small Screen - Mobile
 
 	.overview-chart {
 		padding: 10px;
+	}
+
+	.accont-tabright {
+		margin-top: 40px;
 	}
 
 	
