@@ -630,7 +630,7 @@ footer-area start
 }
 
 .mobile-footer {
-    padding: 30px 0;
+    padding: 8px 0 30px;
 }
 
 .mobile-footer-item {
@@ -1508,7 +1508,7 @@ account-area start
 token-area start
 ======================*/
 .token-area {
-    padding: 25px 0;
+    padding: 25px 0 30px;
 }
 
 .token-main {
@@ -1579,4 +1579,86 @@ token-area start
     font-weight: 600;
     color: #FFF;
     margin-bottom: 0;
+}
+
+.token-part {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    padding: 25px 15px;
+}
+
+.token-item {
+    background: #f7f7f7;
+    padding-top: 15px;
+    box-shadow: 0 8px 13px #0000001c;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.token-item img {
+    width: 100%;
+    margin-bottom: -10px;
+}
+
+.token-item p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #454545;
+    margin-bottom: 0;
+    display: flex;
+    padding: 0 10px;
+}
+
+.token-item p strong {
+    font-size: 16px;
+    color: #4A5F87;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.token-item p span {
+    font-size: 13px;
+    font-weight: 300;
+    display: block;
+    margin-left: auto;
+}
+
+.token-item h4 {
+    font-size: 21px;
+    font-weight: 500;
+    color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.token-item h4 span {
+    font-size: 15px;
+    font-weight: 300px;
+    color: #d80101;
+}
+
+.token-item h4 .green {
+    color: #08a517;
+}
+
+.token-btn {
+    padding: 10px 10px 20px;
+    text-align: center;
+}
+
+.token-btn a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFF;
+    background: #4FB2F7;
+    display: inline-block;
+    padding: 8px 40px;
+    border-radius: 50px;
+}
+
+.token-btn a:hover {
+    opacity: 0.8;
 }
